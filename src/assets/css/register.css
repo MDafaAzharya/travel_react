@@ -1,0 +1,25 @@
+.page{
+    background-image: url('https://media.istockphoto.com/id/1220327476/id/foto/kuil-borobodur-saat-matahari-terbit.jpg?s=1024x1024&w=is&k=20&c=fHebZTud5-c-Hk7g2w6qFak0Hrnm64uhHftlwz-6dXo=');
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 45vw;
+}
+
+.login_bg{
+    background-image: url('https://images.pexels.com/photos/2659475/pexels-photo-2659475.jpeg?cs=srgb&dl=pexels-stijn-dijkstra-2659475.jpg&fm=jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 45vw;
+}
+
+
+
+
+@media only screen and (max-width:768px) {
+    .page{
+        height: 120vw;
+    }
+    .login_bg{
+        height: 120vw;
+    }
+}
