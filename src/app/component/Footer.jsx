@@ -4,7 +4,7 @@ function Footer(){
     return(
         <footer className="">
             <div className="mx-auto w-full max-w-screen-xl py-6 lg:py-8 md:px-20 px-10">
-                <div className="md:flex md:justify-between">
+                <div className="lg:flex lg:justify-between">
                 <div className="">
                     <a href="https://www.smooets.com/" className="flex items-center">
                         <img src="../../../public/logo_trip.png" className="" width={200} />

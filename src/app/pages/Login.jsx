@@ -1,4 +1,5 @@
 import React from "react";
+import { Link } from "react-router-dom";
 
 function Login(){
     return(
@@ -20,8 +21,8 @@ function Login(){
                             <input type="text" className="p-2 border border-slate-400  hover:border-red-400 duration-200" />
                         </div>
                         <div>
-                        <button className="px-36 py-2 bg-red-500 text-white font-semibold text-md flex mx-auto mt-8 rounded-md hover:bg-transparent border-2 
-                            hover:border-red-500 hover:text-red-500 duration-300">Login</button>
+                        <Link to="/beranda" className="py-2 bg-red-500 text-white font-semibold text-md flex mx-12 px-36 mt-8 rounded-md hover:bg-transparent border-2 
+                            hover:border-red-500 hover:text-red-500 duration-300">Login</Link>
                         </div>
                         <div className="flex justify-around mx-5 mt-3">
                             <a className="font-normal text-xs "> Forgot Password </a>
@@ -49,8 +50,8 @@ function Login(){
                         <input type="text" className="p-2 border border-slate-400  hover:border-red-400 duration-200" />
                     </div>
                     <div className="flex md:justify-end md:mr-12">
-                    <button className="px-20 md:px-32  py-2 bg-red-500 text-white font-semibold text-md mt-8 mx-auto md:mx-0 rounded-md hover:bg-transparent border-2 
-                        hover:border-red-500 hover:text-red-500 duration-300">Login</button>
+                    <Link to="/beranda" className="px-20 md:px-32  py-2 bg-red-500 text-white font-semibold text-md mt-8 mx-auto md:mx-0 rounded-md hover:bg-transparent border-2 
+                        hover:border-red-500 hover:text-red-500 duration-300">Login</Link>
                     </div>
                     <div className="mx-12 mt-3">
                         <a className="font-normal text-sm "> Forgot Password? </a>
