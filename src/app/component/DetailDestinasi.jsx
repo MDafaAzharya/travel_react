@@ -2,9 +2,9 @@ import { CiLocationOn } from "react-icons/ci";
 const DetailDestinasi = () => {
     return (
         <>
-            <div className="flex">
-                <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQibtz8R5cLyjJ8gUVc_dYvdaSyc5U-tRl9tg" style={{ width: "550px", height: "900px" }} />
-                <div className="mt-[60px] w-full ps-[40px] pe-[80px]">
+            <div className="flex flex-col container lg:flex lg:flex-row">
+                <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQibtz8R5cLyjJ8gUVc_dYvdaSyc5U-tRl9tg" className="lg:w-[550px] lg:h-[900px]" />
+                <div className="mt-[60px] w-full ps-[40px] pe-[40px] lg:pe-[80px] ">
                     <p className="text-red-600 font-semibold">Destinasi / Jawa Timur</p>
                     <hr className="mt-4 mb-6" />
                     <div className="">
@@ -20,11 +20,11 @@ const DetailDestinasi = () => {
                         </div>
                         <div className="my-5 grid grid-cols-2">
                             <div className="flex gap-1 items-center">
-                                <CiLocationOn className="text-red-600 text-[30px] flex" />
-                                <p className="font-semibold">Titik Penjemputan</p>
+                                <CiLocationOn className="flex text-red-600 text-[20px] lg:text-[30px] " />
+                                <p className="font-semibold text-[13px] lg:text-[18px]">Titik Penjemputan</p>
                             </div>
                             <div className="w-full">
-                                <select className=" border rounded-md border-gray-300 text-slate-500 text-sm  focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5 ">
+                                <select className="border rounded-md border-gray-300 text-slate-500 text-sm  focus:ring-blue-500 focus:border-blue-500 block w-full p-1 lg:p-2.5 ">
                                     <option selected>Kavling Ninggar</option>
                                 </select>
                             </div>
@@ -41,7 +41,7 @@ const DetailDestinasi = () => {
                         </div>
                         <div className="mt-10">
                             <div className="grid grid-cols-2 mb-4">
-                                <p className="font-semibold text-slate-700">Harga berdasarkan jumlah orang</p>
+                                <p className="font-semibold text-slate-700 text-[16px]">Harga berdasarkan jumlah orang</p>
                                 <p className="text-end"><b className="text-red-500 text-[17px]">Rp 1.200.000</b> /Orang</p>
                             </div>
                             <div className="w-full h-4 mb-2 bg-gray-200 rounded-full ">
@@ -70,17 +70,17 @@ const DetailDestinasi = () => {
                     </div>
                 </div>
             </div>
-            <div className="container mx-[90px] mt-[100px]">
-                <div className="flex gap-9 mb-2">
-                    <p className="font-semibold text-[22px] text-red-500">Detail Perjalanan</p>
-                    <p className="font-semibold text-[22px] text-slate-400">Syarat & Ketentuan</p>
-                    <p className="font-semibold text-[22px] text-slate-400">Galeri</p>
-                    <p className="font-semibold text-[22px] text-slate-400">Ulasan</p>
+            <div className="container w-full mt-[100px] lg:mx-[90px]">
+                <div className="flex flex-wrap gap-3 justify-center lg:justify-start lg:gap-9 mb-2">
+                    <p className="font-semibold text-[18px] text-red-500 lg:text-[22px]">Detail Perjalanan</p>
+                    <p className="font-semibold text-[18px] text-slate-400 lg:text-[22px]">Syarat & Ketentuan</p>
+                    <p className="font-semibold text-[18px] text-slate-400 lg:text-[22px]">Galeri</p>
+                    <p className="font-semibold text-[18px] text-slate-400 lg:text-[22px]">Ulasan</p>
                 </div>
                 <hr />
                 <div className="mt-[60px]">
-                    <div className="flex gap-20">
-                        <div className="bg-red-500 py-[15px] px-[25px]">
+                    <div className="mx-[20px] gap-5 lg:mx-[0px] flex lg:gap-20">
+                        <div className="bg-red-500 h-[100px] flex flex-col justify-center w-[100px] lg:h-[105px] lg:w-[95px]">
                             <p className="text-white text-[22px] text-center">Hari</p>
                             <p className="text-white text-[22px] text-center">1</p>
                         </div>
@@ -95,10 +95,10 @@ const DetailDestinasi = () => {
                     </div>
                 </div>
                 <div className="mt-[60px]">
-                    <div className="flex gap-20">
-                        <div className="bg-red-500 py-[15px] px-[25px]">
+                    <div className="mx-[20px] gap-5 lg:mx-[0px] flex lg:gap-20">
+                        <div className="bg-red-500 h-[100px] flex flex-col justify-center w-[100px] lg:h-[105px] lg:w-[95px]">
                             <p className="text-white text-[22px] text-center">Hari</p>
-                            <p className="text-white text-[22px] text-center">2</p>
+                            <p className="text-white text-[22px] text-center">1</p>
                         </div>
                         <div className="space-y-2">
                             <p className="font-semibold text-slate-700">20.30</p>
@@ -111,10 +111,10 @@ const DetailDestinasi = () => {
                     </div>
                 </div>
                 <div className="mt-[60px]">
-                    <div className="flex gap-20">
-                        <div className="bg-red-500 py-[15px] px-[25px]">
+                    <div className="mx-[20px] gap-5 lg:mx-[0px] flex lg:gap-20">
+                        <div className="bg-red-500 h-[100px] flex flex-col justify-center w-[100px] lg:h-[105px] lg:w-[95px]">
                             <p className="text-white text-[22px] text-center">Hari</p>
-                            <p className="text-white text-[22px] text-center">3</p>
+                            <p className="text-white text-[22px] text-center">1</p>
                         </div>
                         <div className="space-y-2">
                             <p className="font-semibold text-slate-700">20.30</p>
